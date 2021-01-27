@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_movie_tittle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#128474"
+        android:fontFamily="sans-serif-thin"
+        android:padding="30dp"
+        android:text="Movie Title"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_movie_detail_poster"
+        android:layout_width="140dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_movie_tittle"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/tv_movie_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Movie Year"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_movie_detail_poster"
+        app:layout_constraintTop_toBottomOf="@+id/tv_movie_tittle" />
+
+    <TextView
+        android:id="@+id/tv_movie_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="4dp"
+        android:text="Duration"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/iv_movie_detail_poster"
+        app:layout_constraintTop_toBottomOf="@+id/tv_movie_year" />
+
+    <TextView
+        android:id="@+id/tv_movie_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="8dp"
+        android:text="Rating"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/iv_movie_detail_poster"
+        app:layout_constraintTop_toBottomOf="@+id/tv_movie_duration" />
+
+    <Button
+        android:id="@+id/btn_favorite"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#72DFC5"
+        android:text="Mark As Favorite"
+        android:textColor="#7E7A7A"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_movie_detail_poster"
+        app:layout_constraintTop_toBottomOf="@+id/tv_movie_rating" />
+
+    <TextView
+        android:id="@+id/tv_movie_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Movie Desc"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_movie_detail_poster" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
