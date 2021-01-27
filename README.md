@@ -9,4 +9,5 @@ In your request for a key, state that your usage will be for educational/non-com
 In order to request popular movies you will want to request data from the /movie/popular and /movie/top_rated endpoints (documentation). An API Key is required.
 
 Once you obtain your key, you append it on the inside JsonHolder.java for the API_KEY.
+
 JsonHolder.class can be found on app/src/main/java/api
